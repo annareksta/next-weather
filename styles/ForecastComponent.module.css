@@ -1,0 +1,66 @@
+.forecastContainer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .forecastGrid {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+  }
+  
+  .forecastCard {
+    display: flex; /* Делаем карточку гибкой */
+    flex-direction: column;
+    align-items: center; /* Центрируем содержимое по вертикали */
+    justify-content: center; /* Равномерное распределение */
+    text-align: center;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 120px;
+  }
+  
+  .forecastCard img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain; /* Убедимся, что иконка не растягивается */
+  }
+  
+  .hourlyForecast {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f0f0f0;
+  }
+  
+  .hourlyGrid {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+  }
+  
+  .hourlyTemp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 80px;
+  }
+  
+  .hourlyTemp img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin: 5px 0;
+  }
+  

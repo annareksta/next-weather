@@ -1,0 +1,43 @@
+.weatherContainer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .searchForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .searchForm input {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #7d8282; /* Добавляем рамку */
+    border-radius: 8px;
+    width: 300px;
+    outline: none; /* Убираем стандартное выделение */
+    transition: 0.2s ease-in-out;
+  }
+  
+  .searchForm input:focus {
+    border-color: #007a99; /* Меняем цвет рамки при фокусе */
+    box-shadow: 0 0 5px rgba(0, 121, 153, 0.5); /* Эффект подсветки */
+  }
+
+  .weatherResult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weatherResult img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-top: 10px;
+  }
