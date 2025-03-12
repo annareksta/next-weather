@@ -5,8 +5,7 @@ import ForecastComponent from "@/components/ForecastComponent";
 import MapComponent from "@/components/MapComponent";
 import styles from "@/styles/WeatherComponent.module.css";
 
-const API_KEY = "C762GHQCU2TWHZFGH5P9ZGA8U"; // 🔥 Вставь API-ключ Visual Crossing
-
+const API_KEY = "C762GHQCU2TWHZFGH5P9ZGA8U"; 
 export default function WeatherComponent() {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState<null | any>(null); // 👈 Исправлено: Теперь по умолчанию `null`
@@ -68,6 +67,10 @@ export default function WeatherComponent() {
           {/* Карта */}
           <MapComponent lat={weather.latitude} lon={weather.longitude} />
         </div>
+      )}
+    </div>
+  );
+}
       )}
     </div>
   );
