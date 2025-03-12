@@ -19,15 +19,15 @@ export default function ForecastComponent({ forecast }: ForecastProps) {
 
   if (!forecast || forecast.length === 0) return <p>No forecast available</p>;
 
-  return (
-    <div>
-      {forecast.map((day, index) => (
-        <div key={index} className={styles.forecastCard}>
-          <p>{day.datetime}</p>
-          <img src={`/icons/${day.icon}.png`} alt={day.icon} />
-          <p>{day.tempmin}°C / {day.tempmax}°C</p>
-        </div>
-      ))}
-    </div>
-  );
+return (
+  <div>
+    {forecast.map((day, index) => (
+      <div key={index} className={styles.forecastCard}>
+        <p>{day.datetime}</p>
+        <img src={`/icons/${day.icon}.png`} alt={day.icon} />
+        <p>{day.tempmin}°C / {day.tempmax}°C</p>
+      </div>
+    ))}
+  </div>
+);
 }
