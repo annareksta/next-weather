@@ -1,4 +1,4 @@
-import GitHubSearch from "./GitHubSearch.tsx";
+import GitHubSearch from "./GitHubSearch";
 
 export default function GitHubPage() {
   return (
